@@ -14,6 +14,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>microservices-demo</name>
     <description>Demo project for Spring Boot</description>
+    <modules>
+        <module>twitter-to-kafka-service</module>
+    </modules>
 
     <packaging>pom</packaging>
 
@@ -27,13 +30,13 @@
 		    <dependency>
 			    <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter</artifactId>
-                <version>${spring-boot.version}</version
+                <version>${spring-boot.version}</version>
 		    </dependency>
 
 		    <dependency>
 			    <groupId>org.springframework.boot</groupId>
 			    <artifactId>spring-boot-starter-test</artifactId>
-                <version>${spring-boot.version}</version
+                <version>${spring-boot.version}</version>
 			    <scope>test</scope>
 		    </dependency>
 	    </dependencies>
@@ -55,10 +58,10 @@
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
-                    <version>${spring-boot.version}</version
+                    <version>${spring-boot.version}</version>
                 </plugin>
             </plugins>
-        <pluginManagement>
+        </pluginManagement>
     </build>
 
 </project>
